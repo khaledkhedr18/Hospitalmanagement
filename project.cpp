@@ -16,19 +16,18 @@ void PatientQueue:: input()
     string name, disease,gender;
     int age;
 
- while (vote == 1) {
-        cout << "Enter the patient name: ";
-        cin >> name;
-        cout << "Enter the patient age: ";
-        cin >> age;
+ while (vote == 1)
+ {
+    cout << "Enter the patient name: ";
+    cin >> name;
+    cout << "Enter the patient age: ";
+    cin >> age;
 
-        string genderInput;
-        cout << "Enter patient gender (1-male, 2-female, 3-other): ";
-        cin >> genderInput;
-
-        // Check if the input is numeric
-        bool validInput = true;
-        for (char ch : genderInput)
+    string genderInput;
+    cout << "Enter patient gender (1-male, 2-female, 3-other): ";
+    cin >> genderInput;
+    bool validInput = true;
+    for (char ch : genderInput)
         {
             if (!isdigit(ch))
             {
