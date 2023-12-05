@@ -38,7 +38,7 @@ void PatientQueue:: input()
 
         if (validInput)
         {
-            int gender1 = stoi(genderInput); // Convert to integer
+            int gender1 = stoi(genderInput);
             if (gender1 == 1)
                 gender = "male";
 
@@ -67,8 +67,6 @@ void PatientQueue:: input()
             cout << "do you want to enter any other patient informations\n 1-yes\n 2-no\n";
             cin >> vote;
         }
-        
-
     }
 }
 
